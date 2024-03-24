@@ -143,7 +143,6 @@ $cursor: #fff;
 }
 
 #building{
-background:url("https://z1.ax1x.com/2023/12/08/pigbl6g.png");
 width:100%;			//大小设置为100%
 height:100%;			//大小设置为100%
 position:fixed;
