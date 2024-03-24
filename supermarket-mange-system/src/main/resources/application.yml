@@ -3,7 +3,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url:  jdbc:mysql://localhost:3306/supermarket_db?useSSL=false&useServerPrepStmts=true
     username: root
-    password: 2333
+    password: 123456
 
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
