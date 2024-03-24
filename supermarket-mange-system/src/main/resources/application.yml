@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:  jdbc:mysql://localhost:3306/supermarket_db?useSSL=false&useServerPrepStmts=true
+    username: root
+    password: 2333
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai      #亚洲上海的时区
+mybatis:
+  mapper-locations: classpath:mappers/*.xml
+  configuration:
+    map-underscore-to-camel-case: true #开启驼峰命名自动映射（把下划线命名的字段的值映射到实体类驼峰命名的属性上）
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true  #设置合理化参数，当前端传递给后端给后端的页号值是非正数时，插件会自动把页号改为1；如果页号超过总页数，件会自动把页号改为总页数

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cskj.market.mapper.GoodsMapper">
+    <select id="selectList" resultType="com.cskj.market.pojo.Goods">
+        select * from goods
+        <if test="k!=null and k!=''">
+            WHERE goods_name like "%"#{k}"%"
+        </if>
+    </select>
+    
+</mapper>
